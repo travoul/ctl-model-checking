@@ -1,0 +1,1011 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"balance",
+				"balance_operations_summary_dictionary"
+			],
+			[
+				"bala",
+				"balances_at"
+			],
+			[
+				"balanc",
+				"balance_operations"
+			],
+			[
+				"post",
+				"postOrder"
+			],
+			[
+				"in",
+				"inorder"
+			],
+			[
+				"pre",
+				"preOrder"
+			],
+			[
+				"payables",
+				"payablesChunk"
+			],
+			[
+				"write",
+				"write_xlsx_file"
+			],
+			[
+				"csv",
+				"csv_encoding"
+			],
+			[
+				"left",
+				"leftHead"
+			],
+			[
+				"merge",
+				"mergeSort"
+			],
+			[
+				"div",
+				"div_content"
+			],
+			[
+				"B",
+				"BankBalances"
+			],
+			[
+				"results",
+				"results_dict"
+			],
+			[
+				"transfers",
+				"transfersData"
+			],
+			[
+				"tet",
+				"text-align"
+			],
+			[
+				"aff",
+				"affiliations"
+			],
+			[
+				"affi",
+				"affiliations_dict"
+			],
+			[
+				"res",
+				"results"
+			],
+			[
+				"index",
+				"indexLeft"
+			],
+			[
+				"bigges",
+				"biggestFirstIndex"
+			],
+			[
+				"current",
+				"currentCount"
+			],
+			[
+				"curre",
+				"currentCount"
+			],
+			[
+				"biggest",
+				"biggestLength"
+			],
+			[
+				"bigg",
+				"biggestLength"
+			],
+			[
+				"Current",
+				"currentLength"
+			],
+			[
+				"bi",
+				"biggestLastIndex"
+			],
+			[
+				"max",
+				"maxArr"
+			],
+			[
+				"fib",
+				"fib_mem"
+			],
+			[
+				"nei",
+				"neighbor"
+			],
+			[
+				"prin",
+				"print_grid"
+			],
+			[
+				"ste",
+				"steps"
+			],
+			[
+				"ne",
+				"neighbor"
+			],
+			[
+				"f",
+				"first_line"
+			],
+			[
+				"li",
+				"lines"
+			],
+			[
+				"num",
+				"numberOfMembers"
+			],
+			[
+				"ca",
+				"cachedBalances"
+			],
+			[
+				"__",
+				"__connection__"
+			],
+			[
+				"arr",
+				"arrays"
+			],
+			[
+				"am",
+				"amount"
+			],
+			[
+				"enum_",
+				"enum_bank_balances_status"
+			],
+			[
+				"The",
+				"ThreadPool"
+			],
+			[
+				"com",
+				"companies"
+			],
+			[
+				"_",
+				"_bank"
+			],
+			[
+				"thread",
+				"threadID"
+			],
+			[
+				"comu",
+				"communicate_error"
+			],
+			[
+				"Night",
+				"NightmareError"
+			],
+			[
+				"ex",
+				"except"
+			],
+			[
+				"con",
+				"controller"
+			],
+			[
+				"run",
+				"run_script"
+			],
+			[
+				"scr",
+				"scripts"
+			],
+			[
+				"thra",
+				"thread_id"
+			],
+			[
+				"itau",
+				"itau_balance"
+			],
+			[
+				"insert",
+				"insert_into_bank_balances"
+			],
+			[
+				"itsu",
+				"itau_invest"
+			],
+			[
+				"settings_",
+				"__settings_section__"
+			],
+			[
+				"setup",
+				"setuptools"
+			],
+			[
+				"sec",
+				"section"
+			],
+			[
+				"read",
+				"read_section"
+			],
+			[
+				"sett",
+				"settings_builder"
+			],
+			[
+				"__a",
+				"__amount__"
+			],
+			[
+				"if",
+				"ifmain\tif __name__ == '__main__'"
+			],
+			[
+				"settin",
+				"settings_section"
+			],
+			[
+				"is",
+				"isinstance"
+			],
+			[
+				"ge",
+				"generate_settings_file"
+			],
+			[
+				"gene",
+				"generator"
+			],
+			[
+				"pri",
+				"print_settings_file"
+			],
+			[
+				"date",
+				"date_format"
+			],
+			[
+				"wro",
+				"worksheet"
+			],
+			[
+				"erro",
+				"error_report_list"
+			],
+			[
+				"wri",
+				"write_xlsx_file"
+			],
+			[
+				"file",
+				"filename"
+			],
+			[
+				"SE",
+				"settled"
+			],
+			[
+				"di",
+				"div\tTag"
+			],
+			[
+				"enum",
+				"enum_bank_balances_type"
+			],
+			[
+				"getElements",
+				"getElementsByTagName"
+			],
+			[
+				"json",
+				"json_manager"
+			],
+			[
+				"cou",
+				"count_error"
+			],
+			[
+				"ban",
+				"bank_settings"
+			],
+			[
+				"e",
+				"entries"
+			],
+			[
+				"__des",
+				"__description_csv_headerkey__"
+			],
+			[
+				"final",
+				"_final_number_string"
+			],
+			[
+				"el",
+				"element"
+			],
+			[
+				"micr",
+				"microsiga_lines"
+			],
+			[
+				"mi",
+				"microsiga_lines"
+			],
+			[
+				"micro",
+				"microsiga_generator"
+			],
+			[
+				"for",
+				"format"
+			],
+			[
+				"get",
+				"get_bank_balance"
+			],
+			[
+				"en",
+				"entry"
+			],
+			[
+				"bac",
+				"background"
+			],
+			[
+				"margin",
+				"margin-bottom"
+			],
+			[
+				"col-md-",
+				"col-md-offset-2"
+			],
+			[
+				"col-",
+				"col-md-8"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"padd",
+				"padding"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"conta",
+				"contact-divider"
+			],
+			[
+				"nav",
+				"navbar"
+			],
+			[
+				"mon",
+				"monthly_logs"
+			],
+			[
+				"ba",
+				"balances"
+			],
+			[
+				"jo",
+				"json_file"
+			],
+			[
+				"mo",
+				"monthly_logs"
+			],
+			[
+				"c",
+				"current_date"
+			],
+			[
+				"logs",
+				"logs_dictionary"
+			],
+			[
+				"ma",
+				"major_key"
+			],
+			[
+				"get_",
+				"get_secondary_key"
+			],
+			[
+				"day",
+				"day_delta"
+			],
+			[
+				"multipl",
+				"multiply"
+			],
+			[
+				"originalNo",
+				"originalNoteString"
+			],
+			[
+				"co",
+				"console.log();"
+			],
+			[
+				"try",
+				"try\tTry/Except"
+			],
+			[
+				"log",
+				"log"
+			],
+			[
+				"lang",
+				"language"
+			],
+			[
+				"sele",
+				"selector"
+			],
+			[
+				"onc",
+				"onclick\tAttr"
+			],
+			[
+				"gree",
+				"greeting"
+			],
+			[
+				"forma",
+				"formalGreeting"
+			],
+			[
+				"me",
+				"meta\tTag"
+			],
+			[
+				"print",
+				"print_message"
+			],
+			[
+				"paya",
+				"payables_ids"
+			],
+			[
+				"payment",
+				"payment_date"
+			],
+			[
+				"collec",
+				"collect_date"
+			],
+			[
+				"out",
+				"output_path"
+			],
+			[
+				"bulk",
+				"bulk_anticipations_dictionary"
+			],
+			[
+				"collect",
+				"collect_date"
+			],
+			[
+				"nex",
+				"next_business_date"
+			],
+			[
+				"refs",
+				"refused_dzeros"
+			],
+			[
+				"refused",
+				"refused_dzeros"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 316.0,
+		"last_filter": "pretty",
+		"selected_items":
+		[
+			[
+				"pretty",
+				"Pretty JSON: Validate"
+			],
+			[
+				"valid",
+				"Pretty JSON: Validate"
+			],
+			[
+				"vali",
+				"Pretty JSON: Validate"
+			],
+			[
+				"INSTAL",
+				"Package Control: Install Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"previ",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"prett",
+				"Pretty JSON: Format (Pretty Print) JSON"
+			],
+			[
+				"vmen",
+				"View: Toggle Menu"
+			],
+			[
+				"vmn",
+				"View: Toggle Menu"
+			],
+			[
+				"prettify",
+				"HTMLPrettify"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"pretti",
+				"Pretty JSON: Format (Pretty Print) JSON"
+			],
+			[
+				"pretty json",
+				"Pretty JSON: Format (Pretty Print) JSON"
+			],
+			[
+				"pre",
+				"Pretty JSON: Validate"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"view.settings().get('draw_white_spaces')",
+			"view.settings().get('font_face')",
+			"import urllib.request,os,hashlib; h = 'df21e130d211cfc94d9b0905775a7c0f' + '1e3d39e33b79698005270310898eea76'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by) "
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": false,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": true
+	},
+	"expanded_folders":
+	[
+		"/home/marcello/Documents/ssc0722/ctl-model-checking"
+	],
+	"file_history":
+	[
+		"/home/marcello/Documents/github/eldorado-cli/lib/tasks/set-payables-paid.js",
+		"/home/marcello/Documents/github/eldorado-cli/bin/boletos.json",
+		"/home/marcello/Documents/github/eldorado-cli/bin/ocb.json",
+		"/home/marcello/Documents/github/james/webapp/python/last_balance_operations.py",
+		"/home/marcello/Documents/github/eldorado-cli/bin/payables.json",
+		"/home/marcello/Documents/github/nautilus/bin/aprovadas.txt",
+		"/home/marcello/Documents/github/nautilus/bin/reprovadas.txt",
+		"/home/marcello/Documents/github/accounting/queries/transactions.sql",
+		"/home/marcello/fraude-query.sql",
+		"/home/marcello/Documents/queries/card_revenue.sql",
+		"/home/marcello/Documents/github/eldorado-cli/bin/approve_bas.json",
+		"/home/marcello/Documents/conciliation-files/download.py",
+		"/home/marcello/Documents/github/interview-bit/binary-search-tree/bst.h",
+		"/home/marcello/Documents/github/interview-bit/binary-search-tree/bst.cpp",
+		"/home/marcello/Documents/github/james/webapp/python/get_transfers_window.py",
+		"/home/marcello/Desktop/paus.txt",
+		"/home/marcello/Documents/conciliation-files/download_conc.py",
+		"/home/marcello/Documents/github/interview-bit/binary-search-tree/main.cpp",
+		"/home/marcello/Documents/github/interview-bit/binary-search-tree/traversal/vertical-order-traversal.cpp",
+		"/home/marcello/Desktop/Documentação de Merdas.txt",
+		"/home/marcello/Documents/github/eldorado-cli/lib/index.js",
+		"/home/marcello/Documents/github/eldorado-cli/lib/api.js",
+		"/home/marcello/Documents/github/eldorado-cli/bin/setpayablespaid.js",
+		"/home/marcello/Documents/github/eldorado-cli/bin/teste.json",
+		"/home/marcello/Documents/github/eldorado-cli/lib/tasks/task.js",
+		"/home/marcello/Documents/github/eldorado-cli/bin/teste40000.json",
+		"/home/marcello/Documents/github/eldorado-cli/bin/teste20000.json",
+		"/home/marcello/Documents/github/eldorado-cli/bin/teste0.json",
+		"/home/marcello/Documents/github/eldorado-cli/bin/teste1.json",
+		"/home/marcello/Documents/github/eldorado-cli/lib/tasks/testes.js",
+		"/home/marcello/Documents/github/james/dailybalanceoperations.sql",
+		"/home/marcello/Desktop/Pagar",
+		"/home/marcello/Documents/github/eldorado-cli/bin/pau.log",
+		"/home/marcello/Documents/github/eldorado-cli/bin/pau.json",
+		"/home/marcello/Documents/github/pagarme-accounting/accounting/cash_matching.py",
+		"/home/marcello/Documents/github/pagarme-accounting/bradesco.py",
+		"/home/marcello/Desktop/Corrigir",
+		"/home/marcello/Desktop/chbks",
+		"/home/marcello/Documents/github/accounting/parser.py",
+		"/home/marcello/Documents/github/accounting/queries/boleto-availabity-to-pagarme.sql",
+		"/home/marcello/Documents/github/pagarme-accounting/accounting/gateway_revenue.py",
+		"/home/marcello/Documents/github/accounting/settings.json",
+		"/home/marcello/Documents/github/accounting/queries/failed_transfer_reimbursement.sql",
+		"/home/marcello/Documents/github/accounting/queries/settled_transfer.sql",
+		"/home/marcello/Documents/github/pagarme-accounting/settings.json",
+		"/home/marcello/Documents/github/pagarme-accounting/bradesco_microsiga.txt",
+		"/home/marcello/Documents/github/interview-bit/linked-lists/recursive-merge-sort.cpp",
+		"/home/marcello/Documents/github/interview-bit/linked-lists/iterative-merge-sort.cpp",
+		"/home/marcello/Documents/github/pagarme-accounting/cash_matching.py",
+		"/home/marcello/Documents/github/pagarme-accounting/run.sh",
+		"/home/marcello/Documents/github/accounting/cash_matching.py",
+		"/home/marcello/Documents/github/james/webapp/python/plotter.py",
+		"/home/marcello/Documents/github/james/webapp/views/cash.hbs",
+		"/home/marcello/Documents/github/james/webapp/server.js",
+		"/home/marcello/Documents/github/james/webapp/python/totals.json",
+		"/home/marcello/Documents/github/james/webapp/sse.js",
+		"/home/marcello/Documents/github/james/webapp/python/last_bank_balances.py",
+		"/home/marcello/Documents/github/james/script/itau/balance.js",
+		"/home/marcello/Documents/github/james/script/itau/investment.js",
+		"/home/marcello/Documents/github/james/lastest_balances_investments.sql",
+		"/home/marcello/Documents/github/james/lastest_totals.sql",
+		"/home/marcello/Documents/github/james/webapp/python/database.ini",
+		"/home/marcello/Documents/github/james/webapp/static/public/css/styles.css",
+		"/home/marcello/Documents/queries/set_payables_paid_plsql.sql",
+		"/home/marcello/Documents/github/james/webapp/views/liquidity.html",
+		"/home/marcello/Documents/github/james/webapp/views/home.hbs",
+		"/home/marcello/Documents/github/james/playground/plotter/plotter.py",
+		"/home/marcello/Documents/github/james/script/package.json",
+		"/home/marcello/Documents/github/interview-bit/bit-manipulation/tricks.cpp",
+		"/home/marcello/Desktop/entrada.in",
+		"/home/marcello/Desktop/kiki.py",
+		"/home/marcello/Documents/github/interview-bit/binary-search/rotated-sorted-array-search.cpp",
+		"/home/marcello/Documents/github/interview-bit/arrays/largestn.cpp",
+		"/home/marcello/Documents/github/james/webapp/views/partials/navbar.hbs",
+		"/home/marcello/Documents/github/webserver/server.js",
+		"/home/marcello/Documents/github/james/playground/plotter/balance.html",
+		"/home/marcello/Documents/github/interview-bit/arrays/set-zeros.cpp",
+		"/home/marcello/Documents/github/james/script/bradesco/balance.js",
+		"/home/marcello/.cache/.fr-PjuR34/moneyshot.log_2017-04-07_121926_2017-04-07_123926.log",
+		"/home/marcello/Documents/download_conc.py",
+		"/home/marcello/Documents/github/interview-bit/arrays/krow-pascal.cpp",
+		"/home/marcello/Documents/github/interview-bit/arrays/antidiagonals.cpp",
+		"/home/marcello/Documents/github/interview-bit/arrays/spiral-order-matrix-ii.cpp",
+		"/home/marcello/Documents/concfiles/conc_20170324_950037784_1649.xml",
+		"/home/marcello/Documents/concfiles/conc_20170324_950037784_1645.xml",
+		"/home/marcello/Documents/concfiles/conc_20170324_sub_stone_magazine_1452.xml",
+		"/home/marcello/Documents/github/pagarme-accounting/accounting/boleto_trx.py",
+		"/home/marcello/Documents/github/interview-bit/arrays/first-pascal-rows.cpp",
+		"/home/marcello/Documents/github/interview-bit/arrays/maximum-non-negative.cpp",
+		"/home/marcello/Documents/Contabilidade 2017-03/Referências/Roteiro/Roteiro.txt",
+		"/home/marcello/Documents/Contabilidade 2017-03/Referências/Roteiro/Dicas.txt",
+		"/home/marcello/Documents/github/business-continuity-planning/outros",
+		"/home/marcello/Documents/Contabilidade 2017-03/Referências/Roteiro/transactions_acquirers.sql",
+		"/home/marcello/Documents/Contabilidade 2017-03/Referências/Roteiro/card_revenue.sql",
+		"/home/marcello/Documents/github/business-continuity-planning/plans/isp-failure.md",
+		"/home/marcello/Documents/github/business-continuity-planning/plans/office-power-outage.md",
+		"/home/marcello/Documents/github/james/script/main.py",
+		"/home/marcello/Documents/github/james/.gitignore",
+		"/home/marcello/Documents/github/business-continuity-planning/README.md",
+		"/home/marcello/Documents/github/business-continuity-planning/plans/edi-files-couldnt-be-uploaded-in-time.md",
+		"/home/marcello/Documents/github/business-continuity-planning/plans/stone-cant-never-pay.md",
+		"/home/marcello/Documents/github/business-continuity-planning/plans/stone-cant-pay-period.md",
+		"/home/marcello/Documents/github/business-continuity-planning/plans/stone-cant-pay-today.md",
+		"/home/marcello/Documents/github/business-continuity-planning/plans/funding.md",
+		"/home/marcello/Documents/github/business-continuity-planning/plans/intraday.md",
+		"/home/marcello/Documents/PAU/transfers_edi_6968.txt",
+		"/home/marcello/Documents/PAU/transfers_edi_6969.txt",
+		"/home/marcello/Documents/PAU/0001504292018727053000174PAGAR.ME PAGAMENTOS S.A.txt",
+		"/home/marcello/Documents/microsoft/recursion/fibonacci.py",
+		"/home/marcello/Documents/github/james/install.sh",
+		"/home/marcello/Documents/moneyshot.log_2017-04-04_122302_2017-04-04_123302.log",
+		"/home/marcello/Documents/github/interview-bit/arrays/max-sum-contiguous-subarray.cpp",
+		"/home/marcello/Documents/github/interview-bit/arrays/maximum-absolute-difference.cpp",
+		"/home/marcello/Documents/github/interview-bit/spiral-order-matrix-i/solution.cpp",
+		"/home/marcello/Documents/microsoft/life/life.py",
+		"/home/marcello/Documents/microsoft/path/enun.txt",
+		"/home/marcello/Documents/microsoft/encryption/enunciado.txt",
+		"/home/marcello/Documents/microsoft/strictcredentials/enunciado.txt",
+		"/home/marcello/Documents/microsoft/taskspartners/enunciado.txt",
+		"/home/marcello/Documents/microsoft/life/1.in",
+		"/home/marcello/Documents/microsoft/ice/text.txt",
+		"/home/marcello/Documents/microsoft/lights/Lights",
+		"/home/marcello/Documents/microsoft/lights/Energy",
+		"/home/marcello/Documents/microsoft/lights/Path",
+		"/home/marcello/Documents/microsoft/energy/energy.py",
+		"/home/marcello/Documents/microsoft/energy/1.in",
+		"/home/marcello/Documents/microsoft/eita.in",
+		"/home/marcello/Documents/microsoft/bowl4.in"
+	],
+	"find":
+	{
+		"height": 27.0
+	},
+	"find_in_files":
+	{
+		"height": 90.0,
+		"where_history":
+		[
+			"/home/marcello/Documents/concfiles",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			",",
+			"\\",
+			",",
+			"',",
+			",'b",
+			",b",
+			".",
+			",",
+			"\", ",
+			"[",
+			"\", \"",
+			",",
+			"result.payables.length",
+			",",
+			", ",
+			"ba_cj1qhh1c400037a5yp0mikfrg",
+			",b",
+			",",
+			"10963334, 10963830, 10963335, 10963336, 10963371, 10963373, 10963025, 10964120, 10948429, 10964090, 10964123, 10965707, 10963918, 10964143, 10964260, 10964166, 10963549, 10964144, 10964145, 10963591, 10964148, 10963607, 10963405, 10964036, 10963997, 10963962, 10965703, 10963784, 10964206, 10964276, 10963465, 10963228, 10962992, 10964250, 10963487, 10963169, 10963923, 10963913, 10963940, 10963413, 10963435, 10963437, 10963993, 10963957, 10963961, 10963982, 10963990, 10963017, 10963991, 10963996, 10964321, 10964071, 10963909, 10963737, 10964000, 10963999, 10963908, 10963904, 10964013, 10963767, 10963332, 8038411, 10962993, 10963765, 5875112, 10964012, 10964014, 10963894, 10962987, 10963662, 10964256, 10963911, 10963015, 10963016, 10963261, 10963768, 10963781, 10964290, 10964291, 10964294, 10963150, 10964301, 10963069, 10963766, 10964358, 10964142, 10964154, 10964302, 10963731, 10964359, 10964360, 10964409, 10964423, 10964416, 10964424, 10963683, 10964259, 10963313, 10963695, 10963834, 10963227, 10963237, 10963485, 10963922, 10963239, 10963027, 10963285, 10963346, 10963067, 10963306, 10963234, 10963486, 10963070, 10963259, 10963260, 10963071, 10964160, 10963304, 10963637, 10964346, 10964225, 10963072, 10963714, 10963097, 10963547, 10948428, 10963408, 10964108, 10964208, 10963758, 10965711, 10965700, 10963311, 10964322, 10963333, 10965710, ",
+			"10963334, 10963830, 10963335, 10963336, 10963371, 10963373, 10963025, 10964120, 10948429, 10964090, 10964123, 10965707, 10963918, 10964143, 10964260, 10964166, 10963549, 10964144, 10964145, 10963591, 10964148, 10963607, 10963405, 10964036, 10963997, 10963962, 10965703, 10963784, 10964206, 10964276, 10963465, 10963228, 10962992, 10964250, 10963487, 10963169, 10963923, 10963913, 10963940, 10963413, 10963435, 10963437, 10963993, 10963957, 10963961, 10963982, 10963990, 10963017, 10963991, 10963996, 10964321, 10964071, 10963909, 10963737, 10964000, 10963999, 10963908, 10963904, 10964013, 10963767, 10963332, 8038411, 10962993, 10963765, 5875112, 10964012, 10964014, 10963894, 10962987, 10963662, 10964256, 10963911, 10963015, 10963016, 10963261, 10963768, 10963781, 10964290, 10964291, 10964294, 10963150, 10964301, 10963069, 10963766, 10964358, 10964142, 10964154, 10964302, 10963731, 10964359, 10964360, 10964409, 10964423, 10964416, 10964424, 10963683, 10964259, 10963313, 10963695, 10963834, 10963227, 10963237, 10963485, 10963922, 10963239, 10963027, 10963285, 10963346, 10963067, 10963306, 10963234, 10963486, 10963070, 10963259, 10963260, 10963071, 10964160, 10963304, 10963637, 10964346, 10964225, 10963072, 10963714, 10963097, 10963547, 10948428, 10963408, 10964108, 10964208, 10963758, 10965711, 10965700, 10963311, 10964322, 10963333, 10965710,",
+			"07644, 9492765, 4352254, 9504982, 9503913, 9504988, 9501933, 9501937, 9493209, 9495683, 9498245, 9502043, 9502045, 9493415, 10950101, 10953382, 9507781, 5091696, 9506435, 9496305, 9491048, 9491263, 9501451, 9508969, 10963056, 10966816, 10952719, 10944590, 10948977, 10973474, 10967124, 10929941, 9510077, 10935012, 10967480, 10967562, 10945491, 10966079, 10960363, 10959159, 10962313, 10961618, 10942620, 10973989, 10967743, 10974147, 10974281, 10938547, 10939125, 10939583, 9497248, 9491766, 9489482, 9486513, 9492483, 9492296, 10974282, 9486950, 10940219, 10974494, 5885146, 5884005, 10937103, 10937554, 10938101, 6966983, 10938319, 10957742, 9513366, 10957744, 10951975, 10966645, 10939380, 10939188, 10939310, 4356046, 10939643, 10936282, 4351423, 10940004, 10940024, 10940025, 9487307, 9487661, 9489855, 10940309, 9492809, 9497587, 10941195, 9499987, 9491727, 6977879, 10963206, 5878342, 10942589, 10953570, 10944281, 10944282, 10953585, 10975033, 10975111, 5079382, 10941938, 10941939, 10942062, 10942178, 10942361, 10958048, 10975297, 9477417, 10943220, 10943221, 10935781, 10952619, 10967996, 9476403, 10945096, 10945656, 10945933, 10945935, 10946329, 10946351, 10946815, 10946825, 10945032, 6955146, 6988645, 10948527, 9477337, 9488483, 9493330, 9496874, 9496744, 10929817, 10948300, 9485251, 10955617, 9485268, 9492097, 6988751, 6987817, 5883095, 10935093, 10964718, 10934512, 10973630, 10975849, 10959496, 10975850, 10958459, 10975877, 10957743, 10975971, 10976056, 10976238, 10939177, 10949517, 10939719, 10976454, 5095229, 10966818, 10950296, 10977194, 10974280, 10953038, 10951960, 10944280, 10943222, 10941940, 10977355, 10977449, 10977472, 10963613, 10963623, 10945934, 10934830, 10977893, 10946139, 10945828, 10950327, 10965442, 10978124, 6992286, 9485468, 9490538, 9490873, 9491266, 9491819, 9491776, 9493565, 9495995, 9496308, 9499859, 9512682, 9503915, 10947210, 10962270, 10956072, 10963719, 10969510, 9477570, 9486754, 10944450, 10944417, 10944408, 10932606, 9497061, 9496349, 9487026, 10936087, 10948317, 10953069, 10953952, 10957149, 10963008, 10970837, 10974151, 9487036, 10961480, 10961138, 10961046, 10958994, 10958716, 10956956, 10955603, 10959840, 10959523, 10948132, 10943046, 10953383, 10953243, 10952626, 10950676, 10942457, 10955520, 10937555, 10937326, 10935309, 10935091, 10938261, 10931814, 9487659, 10930934, 10929376, 10933986, 10928514, 9498326, 9496074, 9494077, 9490659, 9514760, 10950733, 10948075, 10964032, 9494638, 10974425, 9514534, 9505144, 9499855, 10938469, 10940480, 9509262, 9488456, 10951723, 10963943, 9510868, 10955772, 6981514, 5102062, 10955774, 10951182, 10943769, 9496048, 9508959, 10958715, 10975848, 10969829, 10958993, 10929188, 9497708, 10940752, 10976099, 5095227, 10959350, 10959398, 10938645, 10939309, 10939308, 10953611, 10939739, 10935784, 5101719, 10953701, 10937117, 10949129, 10944407, 10952617, 10953036, 10944595, 10946696, 10940906, 10953037, 10944699, 10959606, 10964454, 10941361, 10944875, 9501891, 5881372, 10941677, 10953007, 10945006, 10942063, 10946725, 10953354, 10948177, 10942456, 10943005, 10943052, 10960830, 10946797, 10964717, 10964759, 10943770, 10943789, 10964741, 10964792, 10965783, 10965787, 10946610, 9505237, 10961007, 10953868, 10951496, 5103887, 10926501, 10926511, 10926521, 10961533, 10961534, 10926670, 10926828, 9492722, 10961535, 10969827, 10969828, 10954068, 10951316, 5879999, 10927247, 10927256, 10970705, 10927344, 10970836, 10939452, 10970357, 10927621, 5880128, 10931694, 10933544, 10933517, 10938238, 10939384, 10942064, 10946352, 10946896, 10928708, 10951972, 10929187, 10929189, 10953095, 10954215, 10956942, 10929364, 10959351, 10931518, 10929610, 10929614, 10951959, 10929782, 10929774, 10929720, 10929977, 10971260, 10962269, 10966052, 10930112, 10966057, 10971587, 10971540, 10966078, 10954125, 10957432, 10930281, 10966241, 10930743, 10971496, 5883545, 10930847, 10951961, 10931069, 10958034, 6971082, 10971713, 10931307, 10931709, 10931706, 10931835, 6982920, 10956713, 10932201, 10971843, 10971856, 10932439, 10962957, 10932511, 10956952, 10932740, 10972085, 10972207, 10933077, 10933080, 10957148, 10968533, 10933515, 10933565, 10972671, 10942180, 10941962, 10934829, 10934831, 10974036, 10948538, 10972672, 10972737, 10972949, 10935931, 10947680, 10946331, 10945984, 10930044, 10930008, 10968660, 10973677, 10952709, 10968747, 10968751, 10963020, 10968982, 5874229, 5086494, 9505842, 9498621, 9498354, 9493285, 9489165, 9474574, 9514914, 9502842, 9502429, 9513418, 6990427, 9512344, 9502179, 9505211, 9504311, 9495355, 9501834, 9487996, 9494405, 9492729, 3046839, 9500995, 9489561, 9487445, 6987523, 5086176, 9492422, 5882682, 9492410, 5876503, 9497363, 5880303, 5877389, 4352619, 8050286, 8031036, 8049006, 8056271, 8029248, 8053136, 8046160, 8036465, 6972182, 8048431, 6980201, 6972788, 8062512, 10980136, 8065146, 8032059, 6971815, 8047844, 8036032, 8056336, 8065156, 4349446, 10980127, 10979535, 6978106, 6955364, 8061161, 8035369, 10978642, 8036716, 8066326, 8061164, 8032319, 8058945, 8037750, 8029761, 8057355, 10979537, 8037158, 8046974, 8067789, 6955866, 8048510, 6969897, 8050597, 8030065, 8058396, 8052392, 8046022, 8049732, 8035928, 6972773, 6968848, 10979536, 8035372, 8019560, 6966686, 8031052, 5873918, 6968844, 8030699, 6971154, 8032436, 6975195, 8058081, 10963334, 10963830, 10963335, 10963336, 10963371, 10963373, 10963025, 10964120, 10948429, 10964090, 10964123, 10965707, 10963918, 10964143, 10964260, 10964166, 10963549, 10964144, 10964145, 10963591, 10964148, 10963607, 10963405, 10964036, 10963997, 10963962, 10965703, 10963784, 10964206, 10964276, 10963465, 10963228, 10962992, 10964250, 10963487, 10963169, 10963923, 10963913, 10963940, 10963413, 10963435, 10963437, 10963993, 10963957, 10963961, 10963982, 10963990, 10963017, 10963991, 10963996, 10964321, 10964071, 10963909, 10963737, 10964000, 10963999, 10963908, 10963904, 10964013, 10963767, 10963332, 8038411, 10962993, 10963765, 5875112, 10964012, 10964014, 10963894, 10962987, 10963662, 10964256, 10963911, 10963015, 10963016, 10963261, 10963768, 10963781, 10964290, 10964291, 10964294, 10963150, 10964301, 10963069, 10963766, 10964358, 10964142, 10964154, 10964302, 10963731, 10964359, 10964360, 10964409, 10964423, 10964416, 10964424, 10963683, 10964259, 10963313, 10963695, 10963834, 10963227, 10963237, 10963485, 10963922, 10963239, 10963027, 10963285, 10963346, 10963067, 10963306, 10963234, 10963486, 10963070, 10963259, 10963260, 10963071, 10964160, 10963304, 10963637, 10964346, 10964225, 10963072, 10963714, 10963097, 10963547, 10948428, 10963408, 10964108, 10964208, 10963758, 10965711, 10965700, 10963311, 10964322, 10963333, 10965710",
+			"10963334, 10963830, 10963335, 10963336, 10963371, 10963373, 10963025, 10964120, 10948429, 10964090, 10964123, 10965707, 10963918, 10964143, 10964260, 10964166, 10963549, 10964144, 10964145, 10963591, 10964148, 10963607, 10963405, 10964036, 10963997, 10963962, 10965703, 10963784, 10964206, 10964276, 10963465, 10963228, 10962992, 10964250, 10963487, 10963169, 10963923, 10963913, 10963940, 10963413, 10963435, 10963437, 10963993, 10963957, 10963961, 10963982, 10963990, 10963017, 10963991, 10963996, 10964321, 10964071, 10963909, 10963737, 10964000, 10963999, 10963908, 10963904, 10964013, 10963767, 10963332, 8038411, 10962993, 10963765, 5875112, 10964012, 10964014, 10963894, 10962987, 10963662, 10964256, 10963911, 10963015, 10963016, 10963261, 10963768, 10963781, 10964290, 10964291, 10964294, 10963150, 10964301, 10963069, 10963766, 10964358, 10964142, 10964154, 10964302, 10963731, 10964359, 10964360, 10964409, 10964423, 10964416, 10964424, 10963683, 10964259, 10963313, 10963695, 10963834, 10963227, 10963237, 10963485, 10963922, 10963239, 10963027, 10963285, 10963346, 10963067, 10963306, 10963234, 10963486, 10963070, 10963259, 10963260, 10963071, 10964160, 10963304, 10963637, 10964346, 10964225, 10963072, 10963714, 10963097, 10963547, 10948428, 10963408, 10964108, 10964208, 10963758, 10965711, 10965700, 10963311, 10964322, 10963333, 10965710",
+			",b",
+			"intervails",
+			"tx",
+			"ON",
+			"INNER JOIN",
+			"AND",
+			"FROM",
+			"'''",
+			"ORDER BY",
+			"GROUP BY",
+			"WHERE",
+			"SELECT",
+			"INTERVAL",
+			"AT TIME ZONE",
+			" (",
+			"),",
+			",",
+			", (",
+			",",
+			"print_bank_error",
+			"{0}-01",
+			"2017-04-12') and",
+			",",
+			",b",
+			",",
+			", ",
+			",",
+			" ",
+			" -> ",
+			" ",
+			"write_xlsx_file",
+			"'",
+			",",
+			"'",
+			"payables",
+			"receivables",
+			"payables",
+			"2017-03-01",
+			",",
+			"}</span>",
+			"',",
+			" '",
+			"',",
+			",",
+			"totalsData",
+			"\"BankBalances\".type",
+			"type",
+			"treasury.\"BankBalances\".bank, treasury.\"BankBalances\".amount",
+			"col-md-4",
+			"Investimentos",
+			"Investmentos:",
+			"Investmentos",
+			"Saldo",
+			"<span class=\"glyphicon glyphicon-usd\">",
+			"h3",
+			",",
+			", b",
+			",",
+			"<span class=\"glyphicon glyphicon-usd\"></span>",
+			"Investimentos:",
+			"Saldo:",
+			"<span class=\"glyphicon glyphicon-usd\"></span>",
+			",",
+			"8837637",
+			"8837",
+			"10275078",
+			",",
+			" ",
+			",",
+			"'",
+			"',",
+			",'ba",
+			" ",
+			"',",
+			",",
+			"Conciliating",
+			"1 ",
+			" ",
+			", ",
+			",",
+			"8809394",
+			",",
+			"Payment",
+			"Paymentls",
+			"Payment",
+			">\n",
+			"FinancialEvents",
+			"Trailer",
+			"Payments",
+			",",
+			"'",
+			"',",
+			", '",
+			"',",
+			" [1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58][228 229 230 231 232 233 234 235 236 237 238 239 240 241 242 243 244 245 246 247 248 249 250 251 252 253 254 255 256 257 258 259 260 261 262 263 264 265 266 267 268 269 270 271 272 273 274 275 276 277 278 279 280 281 282 283 284 59][227 448 449 450 451 452 453 454 455 456 457 458 459 460 461 462 463 464 465 466 467 468 469 470 471 472 473 474 475 476 477 478 479 480 481 482 483 484 485 486 487 488 489 490 491 492 493 494 495 496 497 498 499 500 501 502 285 60][226 447 660 661 662 663 664 665 666 667 668 669 670 671 672 673 674 675 676 677 678 679 680 681 682 683 684 685 686 687 688 689 690 691 692 693 694 695 696 697 698 699 700 701 702 703 704 705 706 707 708 709 710 711 712 503 286 61][225 446 659 864 865 866 867 868 869 870 871 872 873 874 875 876 877 878 879 880 881 882 883 884 885 886 887 888 889 890 891 892 893 894 8",
+			",",
+			"boleto availability to pagarme",
+			",",
+			"'",
+			"',",
+			", '",
+			"',",
+			"2017-03-01",
+			",",
+			"title~",
+			","
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"",
+			"simulation",
+			"simulati",
+			"simulation"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": true,
+		"wrap": true
+	},
+	"folders":
+	[
+		{
+			"path": "/home/marcello/Documents/ssc0722/ctl-model-checking"
+		}
+	],
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "",
+	"replace":
+	{
+		"height": 50.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 208.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
