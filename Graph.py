@@ -1,7 +1,7 @@
-class Graph(object):
+class Graph():
 	"""docstring for Graph"""
-	def __init__(self):
-		self.nodes = {}
+	def __init__(self, nodes):
+		self.nodes = nodes
 		self.hasProperty = False
 
 	def addNode (self, node):
