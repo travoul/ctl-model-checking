@@ -519,6 +519,15 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "/home/marcello/anticipation_mailer.py",
+			"settings":
+			{
+				"buffer_size": 9989,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -619,6 +628,8 @@
 	],
 	"file_history":
 	[
+		"/home/marcello/Documents/ssc0722/ctl-model-checking/tree.py",
+		"/home/marcello/Documents/ssc0722/ctl-model-checking/README.md",
 		"/home/marcello/Documents/github/eldorado-cli/lib/tasks/set-payables-paid.js",
 		"/home/marcello/Documents/github/eldorado-cli/bin/boletos.json",
 		"/home/marcello/Documents/github/eldorado-cli/bin/ocb.json",
@@ -744,9 +755,7 @@
 		"/home/marcello/Documents/microsoft/lights/Energy",
 		"/home/marcello/Documents/microsoft/lights/Path",
 		"/home/marcello/Documents/microsoft/energy/energy.py",
-		"/home/marcello/Documents/microsoft/energy/1.in",
-		"/home/marcello/Documents/microsoft/eita.in",
-		"/home/marcello/Documents/microsoft/bowl4.in"
+		"/home/marcello/Documents/microsoft/energy/1.in"
 	],
 	"find":
 	{
@@ -766,6 +775,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			", EF",
 			",",
 			"\\",
 			",",
@@ -892,8 +902,7 @@
 			"',",
 			"2017-03-01",
 			",",
-			"title~",
-			","
+			"title~"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -921,8 +930,37 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "/home/marcello/anticipation_mailer.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 9989,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								7596,
+								7596
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 3344.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
 			]
 		}
 	],
