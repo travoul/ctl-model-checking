@@ -1,12 +1,20 @@
 class Tree(object):
-    """docstring for Tree"""
-    def __init__(self):
-        print("")
+    """
+        docstring for Tree
+    """
+
+    def __init__(self, root):
+        """
+        """
+        self.root = root
         
 
 class TreeNode():
-    """docstring for Tree"""
-    def __init__(self, expression, label, left = None, right = None):
+    """
+        docstring for Tree
+    """
+
+    def __init__(self, expression, label, operator = None, prop = None):
         """
             TreeNode constructor
 
@@ -17,9 +25,28 @@ class TreeNode():
 
             left and right should be another TreeNode
         """
+        # Required
         self.expression = expression
         self.label = label
-        self.left = left
-        self.right = right
-        self.arg = arg
+
+        # Optional 
+        self.operator = operator
+        self.prop = prop
+
+        # Default
+        self.right = None
+        self.left = None
         
+    def __str__(self):
+        return "Expression: {0} \t Label: {1} \t Operator: {2} \t Property: {3}".format(
+            self.expression,
+            self.label,
+            self.operator,
+            self.prop)
+
+    def toList(self):
+        return [self.expression, self.label, self.operator, self.prop]
+
+    @staticmethod
+    def getHeaders():
+        return ["expression", "label", "operator", "property"]

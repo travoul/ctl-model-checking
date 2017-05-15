@@ -1,6 +1,9 @@
 from ctl.models.graph import GraphNode
 from ctl.models.graph import Graph
+from ctl.models.tree import TreeNode
 from ctl.models.tree import Tree
+
+from ctl.utils import CTLUtils
 
 from traceback import print_exc
 
@@ -8,9 +11,10 @@ class Parser():
     """docstring for Parser"""
     def __init__(self, filename):
         self.filename = filename
+        self.helper = CTLUtils()
+        self.label = 0
 
     def parse(self):
-
         try:
             with open(self.filename, 'r') as inputData:
 
@@ -27,12 +31,11 @@ class Parser():
 
                 return {
                     "graph" : Graph(nodes),
-                    "expression" : ctlExpression
+                    "expression" : self.parseCTL(ctlExpression)
                 }
 
         except Exception as e:
             print_exc(e)
-        
 
     def createGraphNode(self, data):
 
@@ -47,3 +50,26 @@ class Parser():
         nextStates = data[numberOfProperties + 3:]
 
         return GraphNode(name, properties, nextStates)
+
+    def parseCTL(self, expression):
+        """
+        """
+
+        # Base case where the expression has been parsed to its smallest
+        # granularity (there is no operands)
+        if (helper.isProperty(expression))
+            return createTreeNode(expression, 0)
+
+        splitedExpression = helper.splitExpression(expression)
+
+        operator = splitedExpression["operator"]
+        leftExpression = splitedExpression["left"]
+        rightExpression = None
+
+        if (helper.shouldHaveRightExpression()):
+            rightExpression = splitedExpression["right"]
+
+        root = createTreeNode(expression, 0)
+        
+        return Tree(root)
+
