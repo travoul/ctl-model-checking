@@ -7,11 +7,11 @@ expressions = {
     # "1": "(((a)&(b))&(c))",
     # "2": "((a)&((b)&(c)))",
     # "3": "((EU((e),(q)))&(c))",
-    # "4": "(AF((e)))",
-    # "5": "(AF((e)&(b)))",
+    "4": "(AF((e)))",
+    "5": "(AF(((e)&(b))))",
     # "6": "(a)",
-    # "7": "(!(EU((true),(!((!(e))|(AF(!(e))))))))",
-    "8": "(EU((true),(!((!(e))|(AF(!(e)))))))"
+    "7": "(!(EU((true),(!((!(e))|(AF((!(e)))))))))",
+    "8": "(EU((true),(!((!(e))|(AF((!(e))))))))"
 }
 
 def parseExpression(expression):
@@ -39,7 +39,7 @@ def parseExpression(expression):
         elif expression[1:4].upper() in ["AF(","EX("]:
             operator = expression[1:3]
             it = 1
-            leftExpression = expression[4:-1]
+            leftExpression = expression[4:-2]
             
         elif expression[1:4].upper() in ["EU("]:
             operator = expression[1:3]
