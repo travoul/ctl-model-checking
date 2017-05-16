@@ -2,11 +2,23 @@ class Tree(object):
     """
         docstring for Tree
     """
-
     def __init__(self, root):
         """
         """
         self.root = root
+
+    def dfs(self, order="in-order"):
+        if order == "in-order":
+            return self.inOrder(self.root)
+        else:
+            return self.inOrder(self.root)
+
+    def inOrder(self, root):
+        if root == None:
+            return ""
+        left = self.inOrder(root.left)
+        right = self.inOrder(root.right)
+        return "{0}--{1}--{2}".format(left, root.expression, right)
         
 
 class TreeNode():
@@ -14,7 +26,7 @@ class TreeNode():
         docstring for Tree
     """
 
-    def __init__(self, expression, label, operator = None, prop = None):
+    def __init__(self, expression, label, operator, prop):
         """
             TreeNode constructor
 

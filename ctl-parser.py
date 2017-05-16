@@ -1,23 +1,20 @@
-# EX EU AF
 from ctl.models.tree import TreeNode
 from tabulate import tabulate
 
-# test cases
 expressions = {
-    # "1": "(((a)&(b))&(c))",
-    # "2": "((a)&((b)&(c)))",
-    # "3": "((EU((e),(q)))&(c))",
+    "1": "(((a)&(b))&(c))",
+    "2": "((a)&((b)&(c)))",
+    "3": "((EU((e),(q)))&(c))",
     "4": "(AF((e)))",
     "5": "(AF(((e)&(b))))",
-    # "6": "(a)",
+    "6": "(a)",
     "7": "(!(EU((true),(!((!(e))|(AF((!(e)))))))))",
-    "8": "(EU((true),(!((!(e))|(AF((!(e))))))))"
+    "8": "(EU((true),(!((!(e))|(AF((!(e))))))))",
+    "9": "((!(!(AF((!(!(!(q))))))))&(!(EU((!(!(q))),(!((!(p))&(!(!(q)))))))))"
 }
 
 def parseExpression(expression):
 
-    # print("parsing {0}".format(expression))
-    # this stack store indices of opening and closing parenthesis of a subexpression
     if expression == None:
         return None
 
@@ -30,7 +27,7 @@ def parseExpression(expression):
     left = 2
     it = 2
 
-    if not (expression[1] == '('):
+    if expression[1] != '(':
         if (expression[1]) == '!':
             operator = '!'
             it = 1
@@ -61,9 +58,8 @@ def parseExpression(expression):
         rightExpression = expression[it + 1:-1]
         leftExpression = expression[1:it]
         operator = expression[it]
-        print(operator, leftExpression, rightExpression, prop)
 
-    root = TreeNode(expression, 0, operator=operator, prop=prop)
+    root = TreeNode(expression, 0, operator, prop)
     root.left = parseExpression(leftExpression)
     root.right = parseExpression(rightExpression)
 
@@ -79,7 +75,6 @@ def dfs(root):
 
 def main():
     for key in sorted(expressions):
-
         result = parseExpression(expressions[key])
         dfs(result)
         print("---------------------------", end="\n\n")

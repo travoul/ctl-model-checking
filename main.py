@@ -1,7 +1,9 @@
-from ctl.utils.parser import Parser
+from ctl.utils.evaluator import Evaluator
+
+from ctl.utils.parser import GraphParser
+from ctl.utils.parser import CTLParser
 
 from traceback import print_exc
-from os import getcwd
 from os import path
 
 import sys
@@ -17,19 +19,15 @@ def main():
     if not (path.exists(filename)):
         sys.exit("{0} not exists".format(filename))
 
-    parser = Parser(filename)
-    parsedInput = parser.parse()
+    graphParser = GraphParser(filename)
+    graph = graphParser.parse()
 
-    graph = parsedInput["graph"]
-    ctlExpression = parsedInput["expression"]
+    ctlParser = CTLParser(filename)
+    expressions = ctlParser.parse()
 
-    # print(graph)
-    print(ctlExpression)
-
-    # for node in sorted(graph.nodes):
-    #     print(graph.nodes[node])
-
-    # print("ctl-model-checking says goodbye!")
+    evaluator = Evaluator(expressions[0] , None)
+    tree = evaluator.evaluate()
+    print(tree.dfs())
 
 if __name__ == '__main__':
     main()
