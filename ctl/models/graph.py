@@ -38,7 +38,7 @@ class GraphNode():
         self.visited = False
 
     def __str__(self):
-        return "Node {0}\nProperties {1}\nNext States: {2}\n----------".format(self.name, self.properties, self.nextStates)
+        return "Node: {0}\nProperties: {1}\nNext States: {2}\nLabels: {3}\n-------------------------------".format(self.name, self.properties, self.nextStates, self.labels)
 
     def addLabel (self, label):
         self.labels.append(label)
