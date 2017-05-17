@@ -28,7 +28,7 @@ class GraphParser():
                     node = self.createGraphNode(lines[i])
                     nodes[node.name] = node
 
-                return Graph(nodes),
+                return Graph(nodes)
         except Exception as e:
             print_exc(e)
 
