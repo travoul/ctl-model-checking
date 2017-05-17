@@ -12,9 +12,41 @@ class Evaluator():
         """
         self.expression = expression
         self.stateMachine = stateMachine
+        self.helper = EvaluatorHelper(stateMachine)
+        self.label = 0
 
     def evaluate(self):
-        return Tree(self.build(self.expression.translated))
+        tree = Tree(self.build(self.expression.translated))
+
+        self.analyze(tree.root)
+
+        return tree
+
+    def analyze(self, node):
+        """
+
+        """
+        # Caso o operator tenha somente um no a esquerda como EX e AF,
+        # eh preciso verificar se o node passado nao eh nulo
+        if node == None:
+            return None
+        print("analyze", node)
+        if node.prop != None:
+            # deveria aplica o label a todos os nós com essa propriedade
+            # no folha
+            self.helper.applyLabel(node, None, None)
+            print("-----------------------------------")
+            return node.label
+        else:
+            # eu sei que node.prop eh None, entao node.operator nao deve ser None
+            # Ou seja, preciso do resultado dos meus filhinhos
+            left = self.analyze(node.left)
+            right = self.analyze(node.right)
+            print("Left {0}    Right: {1}".format(left, right))
+            self.helper.applyLabel(node, left, right)
+            print("-----------------------------------")
+
+            return node.label
 
     def build(self, expression):
         if expression == None:
@@ -62,8 +94,67 @@ class Evaluator():
             operator = expression[it]
 
         # print(operator, leftExpression, rightExpression, prop)
-        root = TreeNode(expression, 0, operator, prop)
+        root = TreeNode(expression, self.label, operator, prop)
+        self.label = self.label + 1
         root.left = self.build(leftExpression)
         root.right = self.build(rightExpression)
 
         return root
+
+class EvaluatorHelper():
+    """
+        docstring for EvaluatorHelper
+    """
+    def __init__(self, graph):
+        self.graph = graph
+        self.operators = {
+            "&": self.andOperator,
+            "|": self.orOperator,
+            "eu": self.eu,
+            "ex": self.ex,
+            "af": self.af,
+            "!": self.neg
+        }
+
+    def applyLabel(self, node, leftLabel, rightLabel):
+        if leftLabel == None and rightLabel == None:
+            self.prop(node.label, node.prop)
+        else:
+            self.operators[node.operator](node.label, leftLabel, rightLabel)
+
+    def neg(self, label, left, dummy):
+        print("neg")
+
+    def andOperator(self, label, left, right):
+        nodes = self.graph.nodes
+        for key in nodes:
+            if left in nodes[key].labels and right in nodes[key].labels:
+                nodes[key].labels.append(label)
+
+    def orOperator(self, label, left, right):
+        print("or")
+
+    def eu(self, label, left, until):
+        print("eu")
+
+    def ex(self, label, left, dummy):
+        print("ex")
+
+    def af(self, label, left, dummy):
+        print("af")
+
+    def prop(self, label, prop):
+        nodes = self.graph.nodes
+        for key in nodes:
+            if prop in nodes[key].properties:
+                nodes[key].labels.append(label)
+"""
+    operators = {
+        "&": andOperator,
+        "|": orOperator,
+        "eu": eu,
+        "ex": ex,
+        "af": af,
+        "!": neg
+    }
+"""

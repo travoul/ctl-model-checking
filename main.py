@@ -21,13 +21,22 @@ def main():
 
     graphParser = GraphParser(filename)
     graph = graphParser.parse()
-
+    print(graph)
     ctlParser = CTLParser(filename)
     expressions = ctlParser.parse()
 
-    evaluator = Evaluator(expressions[0] , None)
+    evaluator = Evaluator(expressions[0], graph)
+
     tree = evaluator.evaluate()
-    print(tree.dfs())
+
+    print("")
+    print("")
+    print("-------------- Tree ------------")
+    tree.dfs()
+
+    print("-------------- Graph ------------")
+    for key in graph.nodes:
+        print(graph.nodes[key])
 
 if __name__ == '__main__':
     main()
