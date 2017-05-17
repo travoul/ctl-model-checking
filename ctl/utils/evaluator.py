@@ -123,7 +123,10 @@ class EvaluatorHelper():
             self.operators[node.operator](node.label, leftLabel, rightLabel)
 
     def neg(self, label, left, dummy):
-        print("neg")
+        nodes = self.graph.nodes
+        for key in nodes:
+            if left not in nodes[key].labels:
+                nodes[key].labels.append(label)
 
     def andOperator(self, label, left, right):
         nodes = self.graph.nodes
@@ -132,7 +135,10 @@ class EvaluatorHelper():
                 nodes[key].labels.append(label)
 
     def orOperator(self, label, left, right):
-        print("or")
+        nodes = self.graph.nodes
+        for key in nodes:
+            if left in nodes[key].labels or right in nodes[key].labels:
+                nodes[key].labels.append(label)
 
     def eu(self, label, left, until):
         print("eu")
@@ -148,13 +154,3 @@ class EvaluatorHelper():
         for key in nodes:
             if prop in nodes[key].properties:
                 nodes[key].labels.append(label)
-"""
-    operators = {
-        "&": andOperator,
-        "|": orOperator,
-        "eu": eu,
-        "ex": ex,
-        "af": af,
-        "!": neg
-    }
-"""
