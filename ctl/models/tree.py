@@ -15,10 +15,10 @@ class Tree(object):
 
     def inOrder(self, root):
         if root == None:
-            return ""
+            return
         left = self.inOrder(root.left)
+        print(root)
         right = self.inOrder(root.right)
-        return "{0}--{1}--{2}".format(left, root.expression, right)
         
 
 class TreeNode():
