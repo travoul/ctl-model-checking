@@ -1,8 +1,9 @@
 4
-1 2 p q 2 2 3
-2 2 p r 2 2 4
-3 2 q r 1 1
-4 1 q 1 4
-(((p)&(q))|(p))
-((p)&((p) &( q)))
-(AF(EX(q)->AF(p)))
+1 2 phahaha queisso 2 2 3
+2 2 pphahaha ronaldo 2 2 4
+3 2 queisso ronaldo 1 1
+4 1 queisso 1 4
+(EU((phahaha) , ( ( queisso ) & (      !(ronaldo)))))
+(EU((p),((q)&(r))))
+(EX((((p)&(r))|((p)&(q)))))
+(AF(((q)|((p)&(r)))))

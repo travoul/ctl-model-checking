@@ -35,7 +35,7 @@ def main():
     tree.dfs()
 
     print("-------------- Graph ------------")
-    for key in graph.nodes:
+    for key in sorted(graph.nodes):
         print(graph.nodes[key])
 
 if __name__ == '__main__':

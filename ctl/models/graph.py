@@ -33,12 +33,12 @@ class GraphNode():
     def __init__(self, name, properties, nextStates):
         self.properties = properties
         self.nextStates = nextStates
-        self.labels = []
+        self.labels = set()
         self.name = name
         self.visited = False
 
     def __str__(self):
-        return "Node: {0}\nProperties: {1}\nNext States: {2}\nLabels: {3}\n-------------------------------".format(self.name, self.properties, self.nextStates, self.labels)
+        return "Node: {0}\nProperties: {1}\nNext States: {2}\nLabels: {3}\n-------------------------------".format(self.name, sorted(self.properties), sorted(self.nextStates), sorted(self.labels))
 
     def addLabel (self, label):
         self.labels.append(label)

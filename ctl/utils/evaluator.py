@@ -14,6 +14,7 @@ class Evaluator():
         self.stateMachine = stateMachine
         self.helper = EvaluatorHelper(stateMachine)
         self.label = 0
+        self.labels = {}
 
     def evaluate(self):
         tree = Tree(self.build(self.expression.translated))
@@ -47,6 +48,15 @@ class Evaluator():
             print("-----------------------------------")
 
             return node.label
+
+    def getLabel(self, expression):
+        try:
+            self.labels[expression]
+        except KeyError:
+            self.labels[expression] = self.label
+            self.label = self.label + 1
+
+        return self.labels[expression]
 
     def build(self, expression):
         if expression == None:
@@ -94,8 +104,7 @@ class Evaluator():
             operator = expression[it]
 
         # print(operator, leftExpression, rightExpression, prop)
-        root = TreeNode(expression, self.label, operator, prop)
-        self.label = self.label + 1
+        root = TreeNode(expression, self.getLabel(expression), operator, prop)
         root.left = self.build(leftExpression)
         root.right = self.build(rightExpression)
 
@@ -106,6 +115,9 @@ class EvaluatorHelper():
         docstring for EvaluatorHelper
     """
     def __init__(self, graph):
+        """
+
+        """
         self.graph = graph
         self.operators = {
             "&": self.andOperator,
@@ -117,40 +129,121 @@ class EvaluatorHelper():
         }
 
     def applyLabel(self, node, leftLabel, rightLabel):
+        """
+
+        """
         if leftLabel == None and rightLabel == None:
             self.prop(node.label, node.prop)
         else:
-            self.operators[node.operator](node.label, leftLabel, rightLabel)
+            self.operators[node.operator.lower()](node.label, leftLabel, rightLabel)
 
     def neg(self, label, left, dummy):
+        """
+
+        """
         nodes = self.graph.nodes
         for key in nodes:
             if left not in nodes[key].labels:
-                nodes[key].labels.append(label)
+                nodes[key].labels.update([label])
 
     def andOperator(self, label, left, right):
+        """
+        
+        """
         nodes = self.graph.nodes
         for key in nodes:
             if left in nodes[key].labels and right in nodes[key].labels:
-                nodes[key].labels.append(label)
+                nodes[key].labels.update([label])
 
     def orOperator(self, label, left, right):
+        """
+        
+        """
         nodes = self.graph.nodes
         for key in nodes:
             if left in nodes[key].labels or right in nodes[key].labels:
-                nodes[key].labels.append(label)
+                nodes[key].labels.update([label])
 
     def eu(self, label, left, until):
-        print("eu")
+        """
+
+        """
+        nodes = self.graph.nodes
+
+        for key in nodes:
+            if until in nodes[key].labels:
+                nodes[key].labels.update([label])
+
+        shouldUpdate = True
+        while shouldUpdate:
+
+            shouldUpdate = False
+            for key in nodes:
+
+                if label in nodes[key].labels:
+                    continue
+
+                # If I ever get here, it means i wasn't labeled as 'label' yet
+                for nextState in nodes[key].nextStates:
+                    if left in nodes[key].labels and until in nodes[nextState].labels:
+                        nodes[key].labels.update([label])
+                        shouldUpdate = True
+                        break
 
     def ex(self, label, left, dummy):
-        print("ex")
+        """
+
+        """
+        nodes = self.graph.nodes
+        for key in nodes:
+            # For each state do:
+            for nextState in nodes[key].nextStates:
+                # For each nextState check if the next state has the left label
+                if left in nodes[nextState].labels:
+                    nodes[key].labels.update([label])
+                    break
 
     def af(self, label, left, dummy):
-        print("af")
+        """
+
+        """
+        nodes = self.graph.nodes
+
+        for key in nodes:
+            if left in nodes[key].labels:
+                nodes[key].labels.update([label])
+
+        shouldUpdate = True
+        while shouldUpdate:
+
+            shouldUpdate = False
+            for key in nodes:
+
+                # In case there is a self loop just live as it is
+                if key in nodes[key].nextStates or label in nodes[key].labels:
+                    continue
+
+                # If I ever get in this line of code it means that the current node does
+                # not have a self loop nor it is already labeled as AF(left)
+
+                # Number of next states
+                countStates = len(nodes[key].nextStates)
+                count = 0
+
+                for nextState in nodes[key].nextStates:
+                    if label in nodes[nextState].labels:
+                        count = count + 1
+                    else: break
+
+                if count == countStates:
+                    nodes[key].labels.update([label])
+                    shouldUpdate = True
 
     def prop(self, label, prop):
+        """
+
+        """
         nodes = self.graph.nodes
         for key in nodes:
             if prop in nodes[key].properties:
-                nodes[key].labels.append(label)
+                nodes[key].labels.update([label])
