@@ -21,22 +21,22 @@ def main():
 
     graphParser = GraphParser(filename)
     graph = graphParser.parse()
-    print(graph)
     ctlParser = CTLParser(filename)
     expressions = ctlParser.parse()
 
     evaluator = Evaluator(expressions[0], graph)
-
     tree = evaluator.evaluate()
 
-    print("")
-    print("")
-    print("-------------- Tree ------------")
-    tree.dfs()
+    print(" ---------- \n| CTL Tree |\n ---------- ")
+    print(tree.toString())
 
-    print("-------------- Graph ------------")
+    print("")
+    print(" --------------- \n| State Machine |\n --------------- ")
     for key in sorted(graph.nodes):
         print(graph.nodes[key])
+
+    graph.render()
+    tree.render()
 
 if __name__ == '__main__':
     main()

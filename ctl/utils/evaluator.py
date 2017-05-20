@@ -18,9 +18,7 @@ class Evaluator():
 
     def evaluate(self):
         tree = Tree(self.build(self.expression.translated))
-
         self.analyze(tree.root)
-
         return tree
 
     def analyze(self, node):
@@ -31,21 +29,17 @@ class Evaluator():
         # eh preciso verificar se o node passado nao eh nulo
         if node == None:
             return None
-        print("analyze", node)
         if node.prop != None:
             # deveria aplica o label a todos os nós com essa propriedade
             # no folha
             self.helper.applyLabel(node, None, None)
-            print("-----------------------------------")
             return node.label
         else:
             # eu sei que node.prop eh None, entao node.operator nao deve ser None
             # Ou seja, preciso do resultado dos meus filhinhos
             left = self.analyze(node.left)
             right = self.analyze(node.right)
-            print("Left {0}    Right: {1}".format(left, right))
             self.helper.applyLabel(node, left, right)
-            print("-----------------------------------")
 
             return node.label
 
@@ -176,16 +170,14 @@ class EvaluatorHelper():
 
         shouldUpdate = True
         while shouldUpdate:
-
             shouldUpdate = False
             for key in nodes:
-
                 if label in nodes[key].labels:
                     continue
 
                 # If I ever get here, it means i wasn't labeled as 'label' yet
                 for nextState in nodes[key].nextStates:
-                    if left in nodes[key].labels and until in nodes[nextState].labels:
+                    if left in nodes[key].labels and label in nodes[nextState].labels:
                         nodes[key].labels.update([label])
                         shouldUpdate = True
                         break
@@ -241,9 +233,10 @@ class EvaluatorHelper():
 
     def prop(self, label, prop):
         """
-
+            Colocar no README que nenhuma propriedade deveria ter o nome true
         """
+
         nodes = self.graph.nodes
         for key in nodes:
-            if prop in nodes[key].properties:
+            if prop in nodes[key].properties or prop == 'true':
                 nodes[key].labels.update([label])
