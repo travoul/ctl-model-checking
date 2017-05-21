@@ -3,12 +3,12 @@ from ctl.models.tree import Tree
 
 class Evaluator():
     """
-        docstring for Evaluator
+        Evaluator
     """
     def __init__(self, expression, stateMachine):
         """
-            expression is a of Expression type as implemented in ctl.utils.parser.Expression
-            stateMachine is of Graph type as implemented in ctl.models.graph.Graph
+            expression: Expression type as implemented in ctl.utils.parser.Expression
+            stateMachine: Graph type as implemented in ctl.models.graph.Graph
         """
         self.expression = expression
         self.stateMachine = stateMachine
@@ -17,26 +17,31 @@ class Evaluator():
         self.labels = {}
 
     def evaluate(self):
+        """
+            Evaluator.evaluate is the interface which is used to evaluate CTL Expression
+            in self.stateMachine. It is a wrapper that first builds a syntactic tree by
+            invoking Evaluator.build and later analyze the generated tree by applying
+            labels according to a label algorithm as implemented in EvaluatorHelper
+        """
         tree = Tree(self.build(self.expression.translated))
         self.analyze(tree.root)
         return tree
 
     def analyze(self, node):
         """
-
+            Given a syntactic tree that starts at node, uses self.helper
+            to label the graph according to the current node and its children
         """
-        # Caso o operator tenha somente um no a esquerda como EX e AF,
-        # eh preciso verificar se o node passado nao eh nulo
         if node == None:
             return None
+
         if node.prop != None:
-            # deveria aplica o label a todos os nós com essa propriedade
-            # no folha
+            # Leaf nodes
             self.helper.applyLabel(node, None, None)
             return node.label
         else:
-            # eu sei que node.prop eh None, entao node.operator nao deve ser None
-            # Ou seja, preciso do resultado dos meus filhinhos
+            # If a node is not a leaf, then it is required the result of
+            # its children nodes
             left = self.analyze(node.left)
             right = self.analyze(node.right)
             self.helper.applyLabel(node, left, right)
@@ -44,6 +49,11 @@ class Evaluator():
             return node.label
 
     def getLabel(self, expression):
+        """
+            Evaluator.getLabel populates self.labels with new
+            labels and returns labels for expressions that have
+            already been assigned a label
+        """
         try:
             self.labels[expression]
         except KeyError:
@@ -53,6 +63,10 @@ class Evaluator():
         return self.labels[expression]
 
     def build(self, expression):
+        """
+            Given a CTL Expression, Evaluator.build recursively builds a
+            synthatic tree that will be later evaluated
+        """
         if expression == None:
             return None
 
@@ -70,7 +84,6 @@ class Evaluator():
                 operator = '!'
                 it = 1
                 leftExpression = expression[2:-1]
-            # Cuidao com o length!!!!!!
             elif expression[1:4].upper() in ["AF(","EX("]:
                 operator = expression[1:3]
                 it = 1
@@ -97,7 +110,6 @@ class Evaluator():
                 rightExpression = newExpression[comma+1:]
                 
             else:
-                # nao tem operator!
                 prop = expression[1:len(expression) - 1]
         else:
             while parenthesesCount != 0:
@@ -111,7 +123,6 @@ class Evaluator():
             leftExpression = expression[1:it]
             operator = expression[it]
 
-        # print(operator, leftExpression, rightExpression, prop)
         root = TreeNode(expression, self.getLabel(expression), operator, prop)
         root.left = self.build(leftExpression)
         root.right = self.build(rightExpression)
@@ -120,7 +131,8 @@ class Evaluator():
 
 class EvaluatorHelper():
     """
-        docstring for EvaluatorHelper
+        EvaluatorHelper contains methods that implements algorithms used to
+        evaluate a CTL Expression.
     """
     def __init__(self, graph):
         """
@@ -138,7 +150,10 @@ class EvaluatorHelper():
 
     def applyLabel(self, node, leftLabel, rightLabel):
         """
+            Interface that should be invoked when using EvaluatorHelper.
 
+            EvaluatorHelper.applyLabel uses self.operators dictionary
+            to redirect the call to a proper operator handler.
         """
         if leftLabel == None and rightLabel == None:
             self.prop(node.label, node.prop)
@@ -147,7 +162,8 @@ class EvaluatorHelper():
 
     def neg(self, label, left, dummy):
         """
-
+            Evaluator.neg labels a node if the node does not have
+            'left' in its labels set
         """
         nodes = self.graph.nodes
         for key in nodes:
@@ -156,7 +172,8 @@ class EvaluatorHelper():
 
     def andOperator(self, label, left, right):
         """
-        
+            Evaluator.andOperator labels a node if the node does
+            have both 'left' and 'right' in its labels set
         """
         nodes = self.graph.nodes
         for key in nodes:
@@ -165,7 +182,8 @@ class EvaluatorHelper():
 
     def orOperator(self, label, left, right):
         """
-        
+            Evaluator.orOperator labels a node if it have 'left'
+            or 'right' in its labels set
         """
         nodes = self.graph.nodes
         for key in nodes:
@@ -174,7 +192,14 @@ class EvaluatorHelper():
 
     def eu(self, label, left, until):
         """
+            Evaluator.eu algorithm is segmented into two steps.
+            
+            1st step: for all nodes, label each node that have
+            'until' in its labels set.
 
+            2nd step: Label all nodes that contains 'left' in
+            its labels set and if a next state have 'until' in
+            its labels set. Rerun 2nd step while updates occur.
         """
         nodes = self.graph.nodes
 
@@ -198,23 +223,29 @@ class EvaluatorHelper():
 
     def ex(self, label, left, dummy):
         """
-
+            Evaluator.ex checks if a next state of a node have 'left'
+            in its labels set. If it does have, the Evaluator.ex algorithm
+            is completed and the node is labeled with 'label'
         """
         nodes = self.graph.nodes
         for key in nodes:
-            # For each state do:
             for nextState in nodes[key].nextStates:
-                # For each nextState check if the next state has the left label
                 if left in nodes[nextState].labels:
                     nodes[key].labels.update([label])
                     break
 
     def af(self, label, left, dummy):
         """
+            Evaluator.af algorithm is segmented into two steps.
+            
+            1st step: for all nodes, label each node that have
+            'left' in its labels set.
 
+            2nd step: Label all nodes that all its next states
+            contains 'left' in its labels set. Rerun 2nd step
+            while updates occur.
         """
         nodes = self.graph.nodes
-
         for key in nodes:
             if left in nodes[key].labels:
                 nodes[key].labels.update([label])
@@ -225,14 +256,10 @@ class EvaluatorHelper():
             shouldUpdate = False
             for key in nodes:
 
-                # In case there is a self loop just live as it is
+                # In case there is a self loop just leave it as it is
                 if key in nodes[key].nextStates or label in nodes[key].labels:
                     continue
 
-                # If I ever get in this line of code it means that the current node does
-                # not have a self loop nor it is already labeled as AF(left)
-
-                # Number of next states
                 countStates = len(nodes[key].nextStates)
                 count = 0
 
@@ -247,9 +274,11 @@ class EvaluatorHelper():
 
     def prop(self, label, prop):
         """
-            Colocar no README que nenhuma propriedade deveria ter o nome true
+            EvaluatorHelper.prop labels a graph based on a leaf node of the
+            CTL Expression's synthatic tree. All leaf nodes are base cases
+            of a single property and a Node will be labeled with label if
+            and only if prop is contained in Node's properties.
         """
-
         nodes = self.graph.nodes
         for key in nodes:
             if prop in nodes[key].properties or prop == 'true':
