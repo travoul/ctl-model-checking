@@ -191,9 +191,20 @@ class Translator():
             if expression[i:i+2] == list('AU'):
                 begin = i+3
                 changes = True
-            if expression[i] == ',':
-                middle = i
-                break
+
+        pCount = 0
+
+        if changes == True:
+            for i in range(begin, len(expression)):
+                
+                if expression[i] == '(':
+                    pCount += 1
+                elif expression[i] == ')':
+                    pCount -= 1
+                
+                if pCount == 0:
+                    middle = i + 1
+                    break
 
         if (changes == True):
             lElements = expression[begin:middle]

@@ -80,8 +80,22 @@ class Evaluator():
                 operator = expression[1:3]
                 it = 1
                 newExpression = expression[4:-2]
-                leftExpression, rightExpression = newExpression.split(',')
-                # print(newExpression, leftExpression, rightExpression)
+
+                pCount = 0
+                comma = 0
+
+                for i in range(len(newExpression)):
+                    if newExpression[i] == '(':
+                        pCount += 1
+                    if newExpression[i] == ')':
+                        pCount -= 1
+                    if pCount == 0:
+                        comma = i + 1
+                        break
+
+                leftExpression = newExpression[:comma]
+                rightExpression = newExpression[comma+1:]
+                
             else:
                 # nao tem operator!
                 prop = expression[1:len(expression) - 1]
