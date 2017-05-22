@@ -42,5 +42,21 @@ def main():
     for key in sorted(graph.nodes):
         print(graph.nodes[key])
 
+    print("\n")
+    count = 0
+    valid = []
+    for key in graph.nodes:
+        if 0 in graph.nodes[key].labels:
+            count = count + 1
+            valid.append(key)
+
+    if count == 0:
+        print("The CTL Expression is not valid in any node.")
+    else:
+        print("The CTL Expression is valid at node(s): ")
+        for entry in valid:
+            print(entry, end='\t')
+
+    print("")
 if __name__ == '__main__':
     main()

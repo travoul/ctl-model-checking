@@ -137,7 +137,7 @@ class Expression():
 class Translator():
     """
         This class represents the Translator of the CTL expression. When an expression
-        is readed by the parser, it is sent to this class. The expression is translated
+        is read by the parser, it is sent to this class. The expression is translated
         in the defined operators: EF, EU, AF, ! (not), & (and) and | (or).
     """
     def __init__(self, expression):
@@ -294,7 +294,7 @@ class Translator():
                 elif expression[i] == ')':
                     pCount -= 1
                 
-                #When pCount == 0, we know we readed the first expression
+                #When pCount == 0, we know we read the first expression
                 #(lElements) from the AU operator, so the next term is a comma.
                 if pCount == 0:
                     middle = i + 1
