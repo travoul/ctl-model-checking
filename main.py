@@ -23,6 +23,9 @@ def main():
     # Parsing input file, which contains the State Machine and the CTL expression that is going to be evaluated
     graphParser = GraphParser(filename)
     graph = graphParser.parse()
+
+    if (graph == None):
+        sys.exit('Invalid Finite State Machine')
     
     # Parsing CTL expression that was found in the file
     ctlParser = CTLParser(filename)
