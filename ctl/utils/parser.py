@@ -27,6 +27,10 @@ class GraphParser():
                 lines = inputData.readlines()               #read all lines
                 numberOfStates = int(lines[0])              #get number of states
 
+                #Checking for empty state machine
+                if (numberOfStates <= 0):
+                    return None
+
                 #Nodes of the graph are stored as a dictionary, with key as
                 #it own name.
                 nodes = {}
@@ -34,6 +38,13 @@ class GraphParser():
                 #Read each of the lines and crete a node representing it.
                 for i in range(1, numberOfStates + 1):
                     node = self.createGraphNode(lines[i])
+                    
+                    #Checking for invalid states
+                    for nextState in node.nextStates:
+                        if (int(nextState) > numberOfStates) or (int(nextState) < 1):
+                            print('Error at line ' + str(i) + ' "' + lines[i][:-1] + '"')
+                            return None
+                    
                     nodes[node.name] = node
 
                 #Returns the constructed graph
