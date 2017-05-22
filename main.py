@@ -28,6 +28,9 @@ def main():
     ctlParser = CTLParser(filename)
     expressions = ctlParser.parse()
 
+    evaluator = Evaluator(expressions[0], graph)
+    tree = evaluator.evaluate()
+
     print(" ---------- \n| CTL Tree |\n ---------- ")
     print(tree.toString())
 
@@ -37,4 +40,4 @@ def main():
         print(graph.nodes[key])
 
 if __name__ == '__main__':
-main()
+    main()
