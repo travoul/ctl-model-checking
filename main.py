@@ -54,7 +54,7 @@ def main():
         print("The CTL Expression is not valid in any node.")
     else:
         print("The CTL Expression is valid at node(s): ")
-        for entry in valid:
+        for entry in sorted(valid):
             print(entry, end='\t')
 
     print("")
