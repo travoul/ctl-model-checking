@@ -3,6 +3,8 @@ from ctl.utils.evaluator import Evaluator
 from ctl.utils.parser import GraphParser
 from ctl.utils.parser import CTLParser
 
+from ctl.models.tree import Tree
+
 from traceback import print_exc
 from os import path
 
@@ -24,13 +26,20 @@ def main():
     graphParser = GraphParser(filename)
     graph = graphParser.parse()
     
+    if (graph == None):
+        sys.exit('Invalid Finite State Machine')
+
     # Parsing CTL expression that was found in the file
     ctlParser = CTLParser(filename)
     expressions = ctlParser.parse()
+    
+    evaluator = Evaluator(expressions[0], graph)
+    tree = evaluator.build(evaluator.expression.translated)
+
 
     # Printing Tree and State Machine using Graphviz
     graph.render()
-    tree.render()
+    Tree(tree).render()
 
 if __name__ == '__main__':
-main()
+    main()
